@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+*.tsbuildinfo
+
+# Données personnelles : ne jamais versionner
+data/
+*.local.sql
+*.local.json
+*.csv
+
+# Fichiers de test locaux
+public/__test/

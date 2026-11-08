@@ -1,0 +1,25 @@
+name = "maiscestqui"
+main = "server/app.ts"
+compatibility_date = "2025-09-01"
+
+# Interface (fichiers construits par Vite). Toutes les adresses servent l'app, sauf /api qui passe par le serveur.
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+run_worker_first = ["/api/*"]
+
+# Base de données (Cloudflare D1, gratuite)
+[[d1_databases]]
+binding = "DB"
+database_name = "maiscestqui"
+# À remplacer par l'identifiant donné par "npx wrangler d1 create maiscestqui" (voir TUTO.md)
+database_id = "REMPLACE-PAR-TON-DATABASE-ID"
+migrations_dir = "migrations"
+
+# IA gratuite de Cloudflare (Workers AI)
+[ai]
+binding = "AI"
+
+[observability]
+enabled = true

@@ -1,0 +1,5 @@
+# Copie ce fichier en ".dev.vars" pour les tests sur ton PC (".dev.vars" n'est jamais envoyé sur GitHub).
+# En ligne, la clé s'ajoute avec : npx wrangler secret put GEMINI_API_KEY
+
+# Facultatif : clé gratuite Google AI Studio (https://aistudio.google.com). Sans clé, l'IA de Cloudflare est utilisée.
+GEMINI_API_KEY=

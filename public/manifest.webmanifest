@@ -1,0 +1,13 @@
+{
+  "name": "Mais c'est qui ?",
+  "short_name": "Maiscestqui",
+  "description": "Le carnet de tes lectures : personnages, lieux et liens, page après page.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F5F2",
+  "theme_color": "#3E3A9E",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
